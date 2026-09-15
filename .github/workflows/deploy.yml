@@ -33,7 +33,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --base-href /MyIkeaRoadMap/
+        run: npm run build -- --base-href /IkeaRoadMap/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
