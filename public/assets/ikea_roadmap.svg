@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1392 354"
+>
+  <rect
+    x="20"
+    y="20"
+    width="260"
+    height="180"
+    fill="#dbeafe"
+    stroke="#1e3a8a"
+    stroke-width="2"
+  />
+
+  <text
+    x="80"
+    y="115"
+    font-family="Arial, sans-serif"
+    font-size="18"
+    fill="#111"
+  >
+    Dnevni boravak
+  </text>
+</svg>
