@@ -1,6 +1,7 @@
 .map {
   position: relative;
   width: 100%;
+  min-width: 900px;
   max-width: 1392px;
   line-height: 0;
 }
@@ -20,8 +21,8 @@
 }
 
 .hotspot {
-  fill: transparent;
-  stroke: transparent;
+  fill: rgb(255 0 0 / 35%);
+  stroke: red;
   stroke-width: 3;
   cursor: pointer;
 }
@@ -36,6 +37,3 @@
   overflow-x: auto;
 }
 
-.map {
-  min-width: 900px;
-}
