@@ -134,7 +134,7 @@ export class App {
     {
       department: 15,
       title: 'FAXÄLVEN element s ogledalom i ugrađenom rasvjetom',
-      image: 'assets/faxvalen.png',
+      image: 'assets/Faxvalen.png',
       imageAlt: 'FAXÄLVEN',
       url: 'https://www.ikea.com/hr/hr/p/faxaelven-element-s-ogl-i-ugradenom-rasvjetom-efekt-hrasta-s09516711/'
     },
