@@ -1,23 +1,32 @@
+.map-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .map {
   position: relative;
-  width: 100%;
-  min-width: 900px;
-  max-width: 1392px;
+  width: 1392px;
+  height: 354px;
   line-height: 0;
 }
 
-.map-image{
+.map-image {
+  position: absolute;
+  inset: 0;
   display: block;
-  width: 100%;
-  height: auto;
+  width: 1392px;
+  height: 354px;
+  object-fit: fill;
 }
 
 .map-overlay {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  z-index: 2;
   display: block;
+  width: 1392px;
+  height: 354px;
 }
 
 .hotspot {
@@ -33,7 +42,6 @@
   stroke: #ffd200;
 }
 
-.map-scroll {
-  overflow-x: auto;
+.hotspot:focus {
+  outline: none;
 }
-
