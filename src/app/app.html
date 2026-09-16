@@ -1,109 +1,75 @@
-<div class="map-scroll">
+<div id="banner" class="map-scroll">
   <div class="map">
-  <img
-    src="assets/ikea_zagreb_map.png"
-    alt="Karta robne kuće s označenim odjelima"
-  />
+    <img src="assets/ikea_zagreb_map.png" alt="Karta robne kuće s označenim odjelima" />
 
-  <svg
-    class="map-overlay"
-    viewBox="0 0 1392 354"
-    preserveAspectRatio="none"
-    aria-label="Interaktivne zone IKEA karte"
-  >
-  <circle
-  class="hotspot"
-  cx="168"
-  cy="174"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 2 – Dnevna soba"
-  (click)="openDepartment(2)"
-  (keydown.enter)="openDepartment(2)"
-  (keydown.space)="openDepartment(2); $event.preventDefault()"
-></circle>
+    <svg class="map-overlay" viewBox="0 0 1392 354" preserveAspectRatio="none"
+      aria-label="Interaktivne zone IKEA karte">
+      <circle class="hotspot" cx="168" cy="174" r="18" tabindex="0" role="button" aria-label="Odjel 2 – Dnevna soba"
+        (click)="openDepartment(2)" (keydown.enter)="openDepartment(2)"
+        (keydown.space)="openDepartment(2); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="288"
-  cy="174"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="288" cy="174" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(5)" (keydown.enter)="openDepartment(5)"
+        (keydown.space)="openDepartment(5); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="367"
-  cy="174"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="367" cy="174" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(7)" (keydown.enter)="openDepartment(7)"
+        (keydown.space)="openDepartment(7); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="749"
-  cy="236"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="670" cy="236" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(13)" (keydown.enter)="openDepartment(13)"
+        (keydown.space)="openDepartment(13); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="790"
-  cy="236"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="749" cy="236" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(15)" (keydown.enter)="openDepartment(15)"
+        (keydown.space)="openDepartment(15); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="828"
-  cy="236"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="790" cy="236" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(16)" (keydown.enter)="openDepartment(16)"
+        (keydown.space)="openDepartment(16); $event.preventDefault()"></circle>
 
-  <circle
-  class="hotspot"
-  cx="1005"
-  cy="236"
-  r="18"
-  tabindex="0"
-  role="button"
-  aria-label="Odjel 5 – Kuhinja"
-  (click)="openDepartment(5)"
-  (keydown.enter)="openDepartment(5)"
-  (keydown.space)="openDepartment(5); $event.preventDefault()"
-></circle>
+      <circle class="hotspot" cx="828" cy="236" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(17)" (keydown.enter)="openDepartment(17)"
+        (keydown.space)="openDepartment(17); $event.preventDefault()"></circle>
 
-    
-  </svg>
-
+      <circle class="hotspot" cx="1005" cy="236" r="18" tabindex="0" role="button" aria-label="Odjel 5 – Kuhinja"
+        (click)="openDepartment(21)" (keydown.enter)="openDepartment(21)"
+        (keydown.space)="openDepartment(21); $event.preventDefault()"></circle>
+    </svg>
   </div>
 </div>
+
+<section class="link-sections" aria-labelledby="link-sections-title">
+  <div class="section-heading">
+    <p class="eyebrow">{{selectedDepartment?.description}} odjel {{selectedDepartment?.id}} </p>
+    <h2 id="link-sections-title">{{selectedDepartment?.name}}</h2>
+  </div>
+
+  <div class="link-grid">
+  @for (card of selectedLinkCards; track card.url) {
+    <article class="link-card">
+      <img [src]="card.image" [alt]="card.imageAlt" width="640" height="450" loading="lazy" />
+
+      <div class="link-card-content">
+        <a class="link-button" [href]="card.url" target="_blank"
+          rel="noopener noreferrer">
+          Source
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  }
+
+        <article class="link-card">
+      <img src="assets/section_7_MALM.png" alt="Krevet Malm" width="640" height="360" loading="lazy" />
+
+      <div class="link-card-content">
+        <a class="link-button" href="https://www.ikea.com/hr/hr/p/malm-otoman-krevet-crno-smeda-80404808/#content" target="_blank"
+          rel="noopener noreferrer">
+          Source
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
