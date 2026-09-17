@@ -60,7 +60,7 @@
 .link-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .link-card {
@@ -76,8 +76,9 @@
 .link-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 3/4;
+  padding: 0.5rem;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -148,4 +149,23 @@
 
 .link-button span {
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 700px) {
+  .link-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .link-card {
+    width: 100%;
+  }
+
+  .link-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f5f6f7;
+  }
 }
